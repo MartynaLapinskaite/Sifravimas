@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/irasomas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Įrašykite tekstą"
+        />
+    <EditText
+        android:id="@+id/raktas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/irasomas"
+        android:hint="Įrašykite raktą"/>
+    <Button
+        android:id="@+id/mygtukas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/raktas"
+        android:text="Šifruoti"/>
+
+    <TextView
+        android:id="@+id/rezultatas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mygtukas"/>
+
+</RelativeLayout>
