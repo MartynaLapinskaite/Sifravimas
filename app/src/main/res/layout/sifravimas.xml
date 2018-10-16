@@ -7,34 +7,43 @@
         android:id="@+id/irasomas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Įrašykite tekstą"
-        />
+        android:hint="Įrašykite tekstą"/>
     <EditText
         android:id="@+id/raktas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/irasomas"
         android:hint="Įrašykite raktą"/>
-
     <Button
         android:id="@+id/mygtukas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/raktas"
+        android:enabled="false"
         android:text="Šifruoti" />
-
+    <Button
+        android:id="@+id/issifravimas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mygtukas"
+        android:enabled="false"
+        android:text="Iššifruoti"/>
+    <Button
+        android:id="@+id/copy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/issifravimas"
+        android:text="Kopijuoti"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/mygtukas">
-
+        android:layout_below="@id/copy">
         <TextView
             android:id="@+id/rezultatas"
+            android:textIsSelectable="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp" />
     </ScrollView>
-
-
-
 </RelativeLayout>
+
