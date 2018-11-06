@@ -84,8 +84,6 @@ public class Pirmas extends AppCompatActivity {
         });
     }
 
-
-
     private String encrypt(String Data, String password) throws Exception {
         SecretKeySpec key = generateKey(password);
         Cipher c= Cipher.getInstance(AES);
@@ -126,6 +124,7 @@ public class Pirmas extends AppCompatActivity {
 
             mygtukas.setEnabled(!irasomas1.isEmpty() && !raktas1.isEmpty());
             issifravimas.setEnabled(!irasomas1.isEmpty() && !raktas1.isEmpty());
+            copy.setEnabled(!irasomas1.isEmpty() && !raktas1.isEmpty());
         }
         @Override
         public void afterTextChanged(Editable s) {

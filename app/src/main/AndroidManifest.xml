@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Pirmas"></activity>
+        <activity android:name=".Antras"></activity>
     </application>
 
 </manifest>

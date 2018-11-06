@@ -3,4 +3,5 @@
     <string name="pasirinkite_ifravimo_b_d">Pasirinkite šifravimo būdą</string>
     <string name="button">Button</string>
     <string name="aes_algoritmas">AES algoritmas</string>
+    <string name="rsa_algoritmas">RSA algoritmas</string>
 </resources>
